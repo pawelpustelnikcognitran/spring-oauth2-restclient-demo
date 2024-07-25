@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: demo
+  security:
+    oauth2:
+      client:
+        registration:
+          management-service:
+            scope:
+              - otx.run
+              - otx.history
+              - otx.logs
+            client-id: management
+            client-secret: management
+            client-name: management-service
+            authorization-grant-type: client_credentials
+            client-authentication-method: client_secret_basic
+            provider: management-auth-provider
+        provider:
+          management-auth-provider:
+            token-uri: http://localhost:8095/oauth/token
