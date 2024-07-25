@@ -44,9 +44,6 @@ import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-/**
- * @author Steve Riesenberg
- */
 public final class OAuth2ClientHttpRequestInterceptor implements ClientHttpRequestInterceptor {
 
     // @formatter:off
